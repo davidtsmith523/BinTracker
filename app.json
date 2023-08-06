@@ -5,6 +5,9 @@
       "bundler": "metro"
     },
     "name": "bin_tracker",
-    "slug": "bin_tracker"
+    "slug": "bin_tracker",
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
