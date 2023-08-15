@@ -1,13 +1,17 @@
-import { View, Text, TouchableOpacity, Image, StyleSheet, Platform } from 'react-native'
+import { View, Text, TouchableOpacity, Image, StyleSheet, Platform, Pressable } from 'react-native'
 import React from 'react'
+import { Link } from 'expo-router';
 
-const Button = ({icon, text}) => {
+const Button = ({icon, text, route}) => {
+
   return (
     <View style={styles.buttonContainer}>
-      <TouchableOpacity style={styles.button}>
-          <Image source={icon} style={styles.buttonImage}></Image>
+      <Link href={route} asChild>
+        <TouchableOpacity style={styles.button}>
+          <Image source={icon} style={styles.buttonImage}/>
           <Text style={styles.buttonText}>{text}</Text>
         </TouchableOpacity>
+      </Link>
     </View>
   )
 }
@@ -20,7 +24,7 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   button: {
-    width: 160,  // Set a fixed width for the TouchableOpacity
+    width: 160,
     height: 200, 
     alignItems: 'center',
     justifyContent: 'center',

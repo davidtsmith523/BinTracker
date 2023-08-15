@@ -10,25 +10,29 @@ const HomeScreen = () => {
     <View style={styles.container}>
       <ImageBackground source={images.moreCardBoardBoxesIphone} resizeMode='cover' style={styles.backgroundImage}>
         <LoginButton/>
-        <Header/>
+        <Header title='BinTracker'/>
         <View style={styles.buttonRow}>
-          <Button 
-            icon={icons.scan}
-            text='Scan'
-          />
+            <Button 
+              icon={icons.scan}
+              text='Scan'
+              route='/scan'
+            />
           <Button
             icon={icons.inventory}
             text='Inventory'
+            route='/inventory'
           />
         </View>
         <View style={styles.buttonRow}>
           <Button
             icon={icons.qrCode}
             text='Create QR'
+            route='/createQR'
           />
           <Button
             icon={icons.howTo}
             text='How To'
+            route='/howTo'
           />
         </View>
       </ImageBackground>

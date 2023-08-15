@@ -1,10 +1,10 @@
 import scan from '../assets/icons/scan-icon.png';
-//import addNew from '../assets/icons/add-new-icon.png';
-//import arrow from '../assets/icons/arrow-icon.png';
+import addNew from '../assets/icons/add-new-icon.png';
+import arrow from '../assets/icons/arrow-icon.png';
 import howTo from '../assets/icons/how-to-icon.png';
 import inventory from '../assets/icons/inventory-icon.png';
 import login from '../assets/icons/login-icon.png';
-//import lookAt from '../assets/icons/look-at-icon.png';
+import lookAt from '../assets/icons/look-at-photo.png';
 import qrCode from '../assets/icons/qr-code-icon.png';
 // import trashcan from '../assets/icons/chevron-left.svg';
 // const addNew = require('../assets/icons/add-new-icon.svg') as string;
@@ -24,5 +24,8 @@ export default {
   inventory,
   login,
   //lookAt,
-  qrCode
+  qrCode,
+  arrow,
+  addNew,
+  lookAt
 };

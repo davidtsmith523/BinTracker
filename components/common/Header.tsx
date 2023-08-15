@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, Platform } from 'react-native'
 import React from 'react'
 
-const Header = () => {
+const Header = ({title}) => {
   return (
-    <View  style={styles.headerContainer}>
+    <View style={styles.headerContainer}>
       <View style={styles.headerBox}>
-        <Text style={styles.headerText}>BinTracker</Text>
+        <Text style={styles.headerText}>{title}</Text>
       </View>
     </View>
   )
@@ -15,7 +15,7 @@ export default Header
 
 const styles = StyleSheet.create({
   headerContainer: {
-    paddingHorizontal: 80,
+    paddingHorizontal: 50,
     paddingVertical: 5,
   },
   headerBox: {
